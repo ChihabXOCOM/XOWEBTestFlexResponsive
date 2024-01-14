@@ -1,0 +1,751 @@
+@import url(https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 0.5rem 0.5rem;
+  justify-content: space-between;
+  width: 1728px;
+  height: 98px;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+}*/
+
+/*.lang {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  display: table-cell;
+  width: 20px;
+  height: 40px;
+  padding: 10px;
+  align: right;
+  vertical-align: middle;
+}*/
+
+/*.site-header {
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+}*/
+
+/*nav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}*/
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* so navbar will go under logo on small smartphones */
+  align-items: baseline;
+  /*padding: 5.7rem;*/
+  /*margin-right: 621.5px;*/
+  justify-content: space-between;
+  /*padding: 0.5rem 0.5rem;*/
+  /*justify-content: space-between;*/
+  width: 1440px;
+  height: 98px;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  /*padding: 25.5 2.5;*/
+  /*margin-right: 1250px;*/
+  margin-left: 261px;
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.navbar button {
+  /*margin-right: 231.83px;*/
+  margin-top: -57px;
+  margin-bottom: 24px;
+  /*margin-left: 1326.17px;*/
+}
+
+.sign-up {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 40px;
+  padding: 0px 85px 0px 1250px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  z-index: 100;
+  min-width: 100%;
+}
+
+/*label {
+  font-family: "Alexandria", sans-serif;
+  color: solid gray;
+  /*position: relative;*/
+/*display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;*/
+/*padding: 1.25px;*/
+/*justify-content: space-between;*/
+/*}*/
+
+/* Dropdown styles */
+
+.dropdown {
+  color: solid gray;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  /*padding: 1.25px;*/
+  justify-content: space-between;
+  /*position: relative;*/
+  /*width: 100%;*/
+  width: 170px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.dropdown-btn {
+  font-family: "Alexandria", sans-serif;
+  background: #fff;
+  font-size: 15px;
+  width: 100%;
+  border-color: #e7e7e7;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em 0.5em;
+  /*border-radius: 0.5em;*/
+  cursor: pointer;
+}
+
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #000;
+  transition: transform ease-in-out 0.3s;
+}
+
+.dropdown-content {
+  list-style: none;
+  position: absolute;
+  top: 0.5em;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.dropdown-content li {
+  background: #fff;
+  border-radius: 0.5em;
+  position: relative;
+  left: 100%;
+  transition: 0.5s;
+  transition-delay: calc(20ms * var(--delay));
+}
+
+.dropdown-content.menu-open li {
+  left: 0;
+}
+
+.dropdown-content.menu-open {
+  visibility: visible;
+}
+
+.arrow.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-content li:hover {
+  background: #000;
+}
+.dropdown-content li a:hover {
+  color: #fff;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 0.7em 0.5em;
+  color: #000;
+  margin: 0.1em 0;
+  text-decoration: none;
+}
+
+/*h1 {
+  text-align: center;
+  background: #fbd666;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: arial;
+  font-weight: 900;
+}*/
+a:link {
+  color: #605bff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #605bff;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: transparent;
+  background-color: transparent;
+  text-decoration: underline;
+}
+button:hover {
+  cursor: pointer;
+  /*color: #fff;*/
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+button:active {
+  color: transparent;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*input:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
+}*/
+input:focus {
+  outline: 0px solid #605bff;
+  fill: #f7f7f8;
+  stroke-width: 1px;
+}
+label,
+input,
+#error-msg {
+  font-family: "Alexandria", sans-serif;
+}
+/*input:active {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
+}*/
+/*.langmenu {
+  width: 1728px;
+  height: 98px;
+  flex-shrink: 0;
+}*/
+
+/*.langmenu img {
+  padding: 25.5 2.5;
+  margin-right: 1313px;
+  margin-left: 261px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}*/
+
+/*.droplang {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 170px;
+  height: 50px;
+  flex-shrink: 0;
+  padding: 10px;
+  vertical-align: middle;
+  margin-right: 231.83px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}*/
+
+/*.box {
+  margin-top: 50px;
+}*/
+
+#bigleftbanner {
+  margin-top: 141px;
+  /*margin-right: 107px;*/
+  /*margin-left: 261px;*/
+}
+#welcometext {
+  margin-top: 143px;
+  /*margin-right: 401px;*/
+  margin-left: 107px;
+  color: #030229;
+  font-family: "Alexandria", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#createtext {
+  margin-top: 7px;
+  /*margin-right: 363px;*/
+  margin-left: 107px;
+  margin-bottom: 53px;
+}
+#businessemailtext {
+  /*margin-top: 53px;*/
+  /*margin-right: 317px;*/
+  margin-left: 107px;
+}
+#mail {
+  margin-right: 368px;
+  margin-top: 6px;
+  margin-left: 107px;
+  margin-bottom: 20px;
+}
+/*#icon {
+  float: right;
+  height: 50px;
+  position: relative;
+  font-size: 25px;
+  padding-top: 10px;
+}*/
+#error-msg {
+  display: none;
+  color: #605bff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 9px;
+  margin-bottom: 18px;
+  margin-left: 107px;
+}
+#usernametext {
+  /*margin-right: 342px;*/
+  margin-top: 20px;
+  margin-left: 107px;
+}
+#username {
+  margin-right: 368px;
+  margin-top: 7px;
+  margin-left: 107px;
+  margin-bottom: 20px;
+}
+#passwordtext {
+  /*margin-right: 362px;*/
+  margin-top: 20px;
+  margin-left: 107px;
+}
+#fakePassword {
+  margin-right: 362px;
+  margin-top: 6px;
+  margin-left: 107px;
+}
+/*#toggler {
+  padding-top: 15px;
+  padding-right: 17px;
+  padding-bottom: 15px;
+  padding-left: 17px;
+  margin-right: 385px;
+  margin-left: 425px;
+  position: relative;
+  right: 35px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  float: right;
+}*/
+/*#passwordcheck-icon {
+  float: right;
+  height: 50px;
+  position: relative;
+  font-size: 25px;
+  padding-top: 10px;
+}*/
+#passworderror-msg {
+  display: none;
+  color: #605bff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 9px;
+  margin-bottom: 18px;
+  margin-left: 107px;
+}
+#checkterms {
+  width: 15px;
+  height: 15px;
+  /*flex-shrink: 0;*/
+  /*position: relative;*/
+  /*display: flex;*/
+  margin-right: 10px;
+  margin-top: 45px;
+  /*margin-bottom: 29px;*/
+}
+#checktext {
+  /*font-size: 16px;
+  font-style: normal;*/
+  /*font-weight: 400;*/
+  /*line-height: normal;*/
+  /*position: relative;*/
+  float: left;
+  /*margin-right: 1px;*/
+  margin-top: 41px;
+  margin-left: 1px;
+  /*margin-bottom: 29px;*/
+}
+#goback {
+  color: #605bff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+  border: 1px solid #605bff;
+}
+
+#createaccount {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 10px;
+  background: #605bff;
+}
+#checkcaptcha {
+  /*margin-top: 30px;*/
+  margin-left: 107px;
+}
+body {
+  font-family: "Alexandria", sans-serif;
+  min-height: 100vh;
+  /*min-width: 100vh;*/
+  width: 100%;
+  height: 100%;
+}
+body .businessemail-field {
+  position: relative;
+}
+body .businessemail-field input {
+  width: 30rem;
+  height: 4em;
+  padding: 1em;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+body .username-field {
+  position: relative;
+}
+body .username-field input {
+  width: 30rem;
+  height: 4em;
+  padding: 1em;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+body .password-field {
+  position: relative;
+}
+body .password-field input {
+  position: relative;
+  width: 30rem;
+  height: 4em;
+  padding: 1em;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+body .password-field input::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+body .password-field #toggler {
+  padding-top: 15px;
+  padding-right: 35px;
+  padding-bottom: 85px;
+  padding-left: 15px;
+  margin-left: 475px;
+  margin-bottom: -150px;
+  /*margin-right: 356px;*/
+  position: relative;
+  /*bottom: 0;
+  right: 0;*/
+  /*right: 5px;*/
+  /*top: 50%;*/
+  /*bottom: 50%;*/
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 200;
+  /*float: right;*/
+  /*right: 20px;*/
+  /*top: 50%;*/
+  color: #605bff;
+}
+
+/*.pageparent {
+  display: flex;
+}*/
+
+/*.pagechild {
+  flex-basis: 100%;
+  text-align: left;
+}*/
+.termsparent {
+  display: flex;
+}
+
+.termschild {
+  flex-basis: -7%;
+  /*float: left;*/
+  /*display: block;
+  overflow: hidden;*/
+}
+
+.accountparent {
+  display: flex;
+}
+
+.accountchild {
+  flex-basis: 42%;
+  float: right;
+  display: block;
+  margin-left: 10px;
+  /*overflow: hidden;*/
+}
+div.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.form {
+  /*padding: 30px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  min-width: 300px;*/
+  label {
+    font-weight: bold;
+    font-size: 13px;
+    font-family: #f7f7f8 "Alexandria", sans-serif;
+  }
+  input {
+    font-family: "Alexandria", sans-serif;
+    width: 432px;
+    height: 50px;
+    margin: 10px 0;
+    padding: 20px 14px;
+    border-radius: 7px;
+    /*border-color: #dcdcdc;*/
+    /*border-width: 1px;*/
+    border: none;
+    background-color: #f7f7f8;
+  }
+  button {
+    background: linear-gradient(to bottom, #fff, #fff);
+    color: #ffffff;
+    font-family: "Alexandria", sans-serif;
+    width: 95%;
+    position: relative;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+}
+.terms {
+  margin-left: 107px;
+  /*width: 100%;*/
+}
+.buttons {
+  margin-top: 33px;
+  margin-left: 107px;
+  margin-bottom: 30px;
+}
+.recaptcha {
+  color: #a7a7a7;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#copyrighttext {
+  margin-top: 105px;
+  margin-left: 275px;
+}
+footer {
+  color: #a7a7a7;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  align-items: baseline;
+  /*padding: 5.7rem;*/
+  /*margin-right: 621.5px;*/
+  justify-content: space-between;
+  width: 1440px;
+  height: 98px;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+/* Format the links in the footer */
+footer a:link {
+  color: #a7a7a7; /* add a contrasting color to make the links visible */
+  text-decoration: none; /* remove underlines */
+  padding: 0.5em; /* add padding to create space around the links */
+}
+
+/* Apply hover effect to the links in the footer */
+footer a:hover {
+  background-color: transparent; /* change the background color when hovering */
+  color: #000000; /* change the text color when hovering */
+}
+
+footer a:visited {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer a:active {
+  color: transparent;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*#footerlinkstext{
+  margin-right: 248.5px;
+}*/
+
+/* Responsive Flexbox */
+
+.flexresp {
+  width: 100%;
+  height: 100%;
+  min-width: 100vh;
+  min-height: 100vh;
+  /*min-width: 100%;*/
+  /* use flex-box */
+  display: flex;
+  /* items go left-to-right */
+  flex-direction: row;
+  /* items fill space above+below, or left+right */
+  /*align-items: stretch;*/
+}
+
+@media only screen and (max-width: 480px) {
+  .flexresp {
+    /* make your mobile option (vertical)
+       the default option! */
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* For mobile phones: */
+    /*[class*="container"] {
+      align-items: center;
+      justify-content: center;
+    }*/
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flexresp {
+    /* make your tablet option (vertical)
+       the default option! */
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* For tablet devices: */
+    /*[class*="container"] {
+      align-items: center;
+      justify-content: center;
+    }*/
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .flexresp {
+    /* make your tablet option (vertical)
+       the default option! */
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
+    /* For tablet devices: */
+    /*[class*="container"] {
+      align-items: center;
+      justify-content: center;
+    }*/
+  }
+}
+
+@media (min-width: 1025px) {
+  .flexresp {
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    [class*="svgxofest"] {
+      margin-left: 261px;
+    }
+  }
+}
+
+.container {
+  /* stretch to an even size. */
+  flex-grow: 1;
+  /* don't grow based on initial sizes.
+       means they are proportional. */
+  flex-basis: 0;
+  padding: 50px;
+  /*text-align: center;*/
+
+  /* lol you can use flex to center align content too */
+  /*display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;*/
+}
+
+/*.container * {
+  margin: 0;
+}*/
+
+/*.container p {
+  margin-top: 0.75rem;
+  text-align: left;
+}*/
+/*.container p a {
+  color: inherit;
+}*/
+
+/*.container p:first-child {
+  margin-top: 0;
+}*/
+.container-right {
+  width: 100%;
+  height: 100%;
+  /*background: linear-gradient(45deg, #5b86e5, #36d1dc);*/
+}
+
+.container-left {
+  width: 100%;
+  height: 100%;
+  /*background: linear-gradient(45deg, #ee0979, #ff6a00);*/
+}
